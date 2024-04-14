@@ -2,9 +2,9 @@ FROM ubuntu
 
 WORKDIR /app 
 
-COPY requirements.txt /app/
+COPY requirements.txt /app
 
-COPY pythonDjango /app/
+COPY pythonDjango /app
 
 RUN apt-get update && \
     apt-get install -y python3 python3-pip && \
